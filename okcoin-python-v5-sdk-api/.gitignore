@@ -1,0 +1,38 @@
+build/
+dist/
+python_okj.egg-info/
+.venv/
+uv.lock
+.pytest_cache/
+*.DS_Store
+**/__pycache__
+**/**/__pycache__
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+id_rsa*

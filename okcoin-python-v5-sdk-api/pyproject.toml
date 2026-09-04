@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "python-okj"
+version = "1.1.0"
+description = "Python SDK for the OKJ (OKCoin Japan) API v5"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+authors = [{ name = "OKJ API Team", email = "api@okj.com" }]
+keywords = ["okj", "okcoin", "crypto", "trading", "api", "sdk"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Office/Business :: Financial",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+dependencies = [
+    "httpx[http2]>=0.25,<1.0",
+    "loguru>=0.7,<1.0",
+    "websockets>=12.0,<14.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff>=0.1,<1.0",
+    "mypy>=1.0,<2.0",
+]
+
+[project.urls]
+Homepage = "https://www.okj.com"
+Documentation = "https://dev.okj.com/apidoc/v5/en/"
+
+[tool.setuptools.packages.find]
+include = ["okj*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP"]
+ignore = ["E501"]
+
+[tool.mypy]
+python_version = "3.10"
+strict = false
+ignore_missing_imports = true
