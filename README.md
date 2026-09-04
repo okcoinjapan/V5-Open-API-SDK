@@ -5,7 +5,7 @@
 
 |list|language|
 |---|---|
-|okcoin-python-v5-sdk-api|Python|
+|okj-python-sdk-api|Python|
 
 - API Document: https://dev.okj.com/apidoc/v5/en
 - API Support: https://www.okj.com/account/inquiryForm
